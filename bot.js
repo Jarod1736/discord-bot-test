@@ -17,9 +17,6 @@ client.on('message', message => {
     if (message.content === 'ping') {
         message.reply('pong');
        }
-       else {
-        message.reply('say ping');
-       }
 
 });
 
