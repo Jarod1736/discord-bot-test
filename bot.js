@@ -1,8 +1,7 @@
 const Discord = require('discord.js');
-const config = require('./config.json');
+const {prefix} = require('./config.json');
 const client = new Discord.Client();
 
- 
 
 client.on('ready', () => {
 
@@ -13,11 +12,6 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    
-    if(message.content === 'test'){
-        message.channel.send(prefix);
-    }
-
 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
