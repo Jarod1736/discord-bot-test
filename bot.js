@@ -26,7 +26,7 @@ client.on('message', message => {
         message.channel.send('say ping');
     }
 
-    if(!args.length) message.channel.send('${args}');
+    if(args.length != 0) message.channel.send(args);
 
 });
 
