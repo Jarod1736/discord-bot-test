@@ -15,12 +15,12 @@ client.on('ready', () => {
 client.on('message', message => {
 
     if (message.content === 'ping') {
-
-       message.reply('pong');
-
+        message.reply('pong');
+       }
+       else {
+        message.reply('say ping');
        }
 
-}
-);
+});
 
 client.login(process.env.BOT_TOKEN);
